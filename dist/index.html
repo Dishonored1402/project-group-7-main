@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="English excellence" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
+    />
+    <title>English Excellence</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script type="module" crossorigin src="/project-group-7/index.js"></script>
+    <link rel="stylesheet" crossorigin href="/project-group-7/assets/index-D9TzveTp.css">
+  </head>
+  <body>
+    <header>
+  <div class="header__container" id="header__top">
+    <a href="#" class="header__logo">
+      english<span class="header__logo--highlight">excellence</span>.
+    </a>
+
+    <nav class="header__nav" aria-label="Main navigation">
+      <ul class="header__nav-list">
+        <li class="header__nav-item">
+          <a class="header__nav-link" href="#about_us">About us</a>
+        </li>
+        <li class="header__nav-item">
+          <a class="header__nav-link" href="#our_lessons">Our lessons</a>
+        </li>
+        <li class="header__nav-item">
+          <a class="header__nav-link" href="#our_teachers">Teachers</a>
+        </li>
+        <li class="header__nav-item">
+          <a class="header__nav-link" href="#reviews">Reviews</a>
+        </li>
+        <li class="header__nav-item">
+          <a class="header__nav-link" href="#leave_an_application"
+            >Contact Us</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <ul class="header__socials" aria-label="Social media links">
+      <li class="header__socials-item">
+        <a
+          href="https://www.facebook.com/goITclub/"
+          class="header__socials-link"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Facebook"
+        >
+          <svg class="header__socials-icon" width="28" height="28">
+            <use href="/project-group-7/assets/icons-DRlGo1qV.svg#icon-facebook"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="header__socials-item">
+        <a
+          href="https://www.instagram.com/goitclub/"
+          class="header__socials-link"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Instagram"
+        >
+          <svg class="header__socials-icon" width="28" height="28">
+            <use href="/project-group-7/assets/icons-DRlGo1qV.svg#icon-instagram"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="header__socials-item">
+        <a
+          href="https://www.youtube.com/c/GoIT"
+          class="header__socials-link"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="YouTube"
+        >
+          <svg class="header__socials-icon" width="28" height="28">
+            <use href="/project-group-7/assets/icons-DRlGo1qV.svg#icon-youtube"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+
+    <button
+      class="header__menu-button"
+      type="button"
+      aria-controls="mobile-menu"
+      aria-expanded="false"
+      aria-label="Open menu"
+      id="menu-open-button"
+    >
+      <svg
+        class="header__menu-icon"
+        width="32"
+        height="23"
+        stroke="var(--color-black)"
+        role="img"
+      >
+        <use href="/project-group-7/assets/icons-DRlGo1qV.svg#icon-mob-menu"></use>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile Navigation -->
+  <div class="backdrop backdrop-hidden" id="backdrop">
+    <div class="menu-container" id="mobile-menu">
+      <button
+        type="button"
+        class="menu-close__button"
+        aria-label="Close menu"
+        id="menu-close-button"
+      >
+        <svg
+          class="menu-close__icon"
+          width="32"
+          height="32"
+          role="img"
+          stroke="var(--color-white)"
+        >
+          <use href="/project-group-7/assets/icons-DRlGo1qV.svg#icon-close"></use>
+        </svg>
+      </button>
+
+      <nav class="menu__nav" aria-label="Mobile navigation">
+        <ul class="menu__nav-list">
+          <li class="menu__nav-item">
+            <a class="menu__nav-link" href="#about_us">About us</a>
+          </li>
+          <li class="menu__nav-item">
+            <a class="menu__nav-link" href="#our_lessons">Our lessons</a>
+          </li>
+          <li class="menu__nav-item">
+            <a class="menu__nav-link" href="#our_teachers">Teachers</a>
+          </li>
+          <li class="menu__nav-item">
+            <a class="menu__nav-link" href="#reviews">Reviews</a>
+          </li>
+          <li class="menu__nav-item">
+            <a class="menu__nav-link" href="#leave_an_application"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <ul class="menu__socials-list" aria-label="Mobile social media links">
+        <li class="menu__socials-item">
+          <a
+            class="menu__socials-link"
+            href="https://www.facebook.com/goITclub/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook"
+          >
+            <svg class="menu__socials-icon" width="28" height="28">
+              <use href="/project-group-7/assets/icons-DRlGo1qV.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+
+        <li class="menu__socials-item">
+          <a
+            class="menu__socials-link"
+            href="https://www.instagram.com/goitclub/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+          >
+            <svg class="menu__socials-icon" width="28" height="28">
+              <use href="/project-group-7/assets/icons-DRlGo1qV.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="menu__socials-item">
+          <a
+            class="menu__socials-link"
+            href="https://www.youtube.com/c/GoIT"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="YouTube"
+          >
+            <svg class="menu__socials-icon" width="28" height="28">
+              <use href="/project-group-7/assets/icons-DRlGo1qV.svg#icon-youtube"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+    <main>
+      <section class="hero">
+    <h1 class="hero-heading">Discover the joy of learning <span class="heading-accent">English</span> with us!</h1>
+    <a href="#application" class="application-link">Leave an application</a>
+    <a href="#footer" class="scroll-down">
+        <svg class="icon">
+            <use href="../img/hero/fi-rr-angle-small-left.svg"></use>
+        </svg>
+    </a>
+</section>
+
+
+      <section class="about-us" id="about_us">
+  <h2 class="about-us__title">About <span>Us</span></h2>
+  <p class="about-us__description">
+    We are dedicated to providing engaging and effective English language
+    courses in a supportive and stimulating learning environment.
+  </p>
+  <div class="about-us__content">
+    <ol class="about-us__list">
+      <li class="about-us__box">
+        <h3 class="about-us__number">01</h3>
+        <p class="about-us__text">
+          <strong>Expert, innovative teaching staff</strong>
+        </p>
+      </li>
+      <li class="about-us__box">
+        <h3 class="about-us__number">02</h3>
+        <p class="about-us__text">
+          <strong>Wide range of course levels and options</strong>
+        </p>
+      </li>
+      <li class="about-us__box">
+        <h3 class="about-us__number">03</h3>
+        <p class="about-us__text">
+          <strong>Multicultural learning environment</strong>
+        </p>
+      </li>
+      <li class="about-us__box">
+        <h3 class="about-us__number">04</h3>
+        <p class="about-us__text">
+          <strong>Comprehensive language support services</strong>
+        </p>
+      </li>
+    </ol>
+    <div class="about-us__emoji">
+      <img
+      src="/project-group-7/assets/memoji-Di4_1owa.png"
+      srcset="/project-group-7/assets/memoji-Di4_1owa.png 1x, /project-group-7/assets/memoji@2x-Ct4oBlk4.png 2x"
+        alt="Smiling Emoji"
+      />
+    </div>
+  </div>
+</section>
+      <!-- Section "Our Lessons" -->
+<section class="lessons" id="our_lessons">
+  <div class="container">
+    <h2 class="lessons__title">Our <span>lessons</span></h2>
+    <p class="lessons__description">
+      Our lessons are carefully structured and interactive, designed to promote
+      rapid language acquisition through practical tasks and real-world
+      scenarios
+    </p>
+
+    <ul class="lessons__plans">
+      <li class="plan plan--practice">
+        <h3 class="plan__title">Practice</h3>
+        <p class="plan__price">40$ / month</p>
+        <p class="plan__description">
+          This plan offers an opportunity for learners to engage in
+          collaboration language practice sessions, boosting their
+          conversational skills and confidence using English.
+        </p>
+        <a class="plan__button" href="#leave_an_application"
+          >Leave an application</a
+        >
+      </li>
+
+      <li class="plan plan--standard">
+        <h3 class="plan__title">Standard</h3>
+        <p class="plan__price">70$ / month</p>
+        <p class="plan__description">
+          Our standard package provides a balanced approach that covers all key
+          aspects of language learning: reading, writing, listening, and
+          speaking. It is ideal for basic knowledge and skills.
+        </p>
+        <a class="plan__button" href="#leave_an_application"
+          >Leave an application</a
+        >
+      </li>
+
+      <li class="plan plan--individual">
+        <h3 class="plan__title">Individual</h3>
+        <p class="plan__price">99$ / month</p>
+        <p class="plan__description">
+          We offer a tailored learning experience with additional mentoring
+          sessions to enhance a learner’s specific language goals and
+          challenges, offering personalized feedback.
+        </p>
+        <a class="plan__button" href="#leave_an_application"
+          >Leave an application</a
+        >
+      </li>
+    </ul>
+  </div>
+</section>
+      <!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meet Our Teachers</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap" rel="stylesheet" />
+    </head>
+    <body>
+
+        <section class="teachers-section">
+        <div class="container">
+            <h2 class="section-title">Meet our teachers</h2>
+            <p class="section-description">Discover our team of dedicated educators, committed to guiding you on your journey 
+                to English proficiency with personalized and engaging instruction
+            </p>
+            <ul class="card-list">
+            <li class="card-item">
+                <img src="../img/our-teachers/maria.jpg" alt="Maria - Beginner-level specialist" width="264">
+                <div class="card-content">
+                <h3 class="card-title">Maria</h3>
+                <p class="card-text">
+                    A seasoned linguist and our primary specialist in beginner-level instruction, 
+                    Maria brings warmth and patience to every class
+                </p>
+                </div>
+            </li>
+
+            <li class="card-item">
+                <img src="../img/our-teachers/artem.jpg" alt="Artem - Interactive learning specialist" width="264">
+                <div class="card-content">
+                <h3 class="card-title">Artem</h3>
+                <p class="card-text">
+                    With his innovative teaching techniques and a focus on interactive learning, 
+                    Artem excels in keeping students engaged and motivated
+                </p>
+                </div>
+            </li>
+
+            <li class="card-item">
+                <img src="../img/our-teachers/ilona.jpg" alt="Ilona - Advanced English specialist" width="264">
+                <div class="card-content">
+                <h3 class="card-title">Ilona</h3>
+                <p class="card-text">
+                    A specialist in advanced English, Ilona provides intensive instruction, 
+                    ensuring students gain confidence in complex language tasks
+                </p>
+                </div>
+            </li>
+
+            <li class="card-item">
+                <img src="../img/our-teachers/volodymyr.jpg" alt="Volodymyr - English for specific purposes" width="264">
+                <div class="card-content">
+                <h3 class="card-title">Volodymyr</h3>
+                <p class="card-text">
+                    Our expert in English for specific purposes, Volodymyr tailors his approach 
+                    to meet individual career and industry-specific language needs
+                </p>
+                </div>
+            </li>
+            </ul>
+        </div>
+        </section>
+    </body>
+</html>
+      <!-- Section "Reviews" -->
+<section class="reviews" id="reviews">
+  <div class="container">
+    <h2 class="reviews__title">What our <span>students</span> say</h2>
+    <p class="reviews__description">
+      Hear from our students about their learning journey with us, as they share
+      their experiences, progress, and the transformative impact
+    </p>
+
+    <ul class="reviews__list">
+      <li class="review">
+        <div class="review__badge">
+          <img
+            class="review__photo"
+            src="/project-group-7/assets/anna-CVIsENlK.jpg"
+            alt="Photo of Anna"
+            width="44"
+            height="44"
+          />
+          <div class="review__who">
+            <span class="review__name">Anna</span>
+            <span class="review__role">Student</span>
+          </div>
+        </div>
+        <p class="review__text">
+          My experience at the language school has been nothing short of
+          amazing. The teachers are dedicated and the learning environment is
+          stimulating. I feel more confident in my English skills.
+        </p>
+      </li>
+
+      <li class="review">
+        <div class="review__badge">
+          <img
+            class="review__photo"
+            src="data:image/jpeg;base64,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"
+            alt="Photo of Mykhailo"
+            width="44"
+            height="44"
+          />
+          <div class="review__who">
+            <span class="review__name">Mykhailo</span>
+            <span class="review__role">Student</span>
+          </div>
+        </div>
+        <p class="review__text">
+          The school offers a great balance of language theory and practical
+          exercises. The personalized feedback from the teachers has helped me
+          improve my weak areas.
+        </p>
+      </li>
+
+      <li class="review">
+        <div class="review__badge">
+          <img
+            class="review__photo"
+            src="/project-group-7/assets/victoria-9k6HfDj9.jpg"
+            alt="Photo of Victoria"
+            width="44"
+            height="44"
+          />
+          <div class="review__who">
+            <span class="review__name">Victoria</span>
+            <span class="review__role">Student</span>
+          </div>
+        </div>
+        <p class="review__text">
+          I love the dynamic and interactive teaching methods used here. It’s a
+          great place to learn English in a fun and effective way. I’ve seen a
+          big improvement in my language skills.
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+    </main>
+
+    <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Footer</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+  </head>
+  <body>
+    <footer>
+        <div class="container" id='footer'>
+            <div class="footer-main-info">
+                <div class="footer-contacts">
+                    <a href="#" class="footer-logo">english<span class="footer-logo-accent">excellence</span>.</a>
+                    <ul class="footer-contacts-list">
+                        <li class="footer-contacts-item">
+                            <p class="footer-contacts-item-header">Phone number:</p>
+                            <a href="tel:+380684439426" class="footer-contracts-items">+380 (68) 443-94-26</a>
+                        </li>
+                        <li class="footer-contacts-item">
+                            <p class="footer-contacts-item-header">Address:</p>
+                            <a href="https://maps.app.goo.gl/MmsKpmkQ8r6pUbiY6" class="footer-contracts-items">32a M. Bazhana ave</a>
+                        </li>
+                    </ul> 
+                </div>
+                <ul class="footer-menu">
+                    <li class="footer-menu-item">
+                        <a class="footer-menu-item-text" href="#">About us</a>
+                    </li>
+                    <li class="footer-menu-item">
+                        <a class="footer-menu-item-text" href="#">Our lessons</a>
+                    </li>
+                    <li class="footer-menu-item">
+                        <a class="footer-menu-item-text" href="#">Teachers</a>
+                    </li>
+                    <li class="footer-menu-item">
+                        <a class="footer-menu-item-text" href="#">Reviews</a>
+                    </li>
+                    <li class="footer-menu-item">
+                        <a class="footer-menu-item-text" href="#">Contact us</a>
+                    </li>
+                </ul>
+                <ul class="footer-socials">
+                    <li class="footer-socials-item">
+                        <a href="https://www.facebook.com/goITclub/">
+                            <svg class="icon">
+                                <use href="../img/footer/footer-icons.svg#facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer-socials-item">
+                        <a href="https://www.instagram.com/goitclub/">
+                            <svg class="icon">
+                                <use href="../img/footer/footer-icons.svg#instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer-socials-item">
+                        <a href="https://www.youtube.com/c/GoIT">
+                            <svg class="icon">
+                                <use href="../img/footer/footer-icons.svg#youtube"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-credentials">
+                <p class="cred-text">©2023  English Excellence. All rights reserved.</p>
+                <ul class="footer-cred-links">
+                    <li class="footer-cred-links-item">
+                        <a href="">Privacy Policy</a>
+                    </li>
+                    <li class="footer-cred-links-item">
+                        <a href="">Terms of Service</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+  </body>
+</html>
+
+  </body>
+</html>
