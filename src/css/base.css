@@ -1,0 +1,106 @@
+html {
+  scroll-behavior: smooth;
+}
+  body {
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    background: var(--color-white);
+  }
+  
+  .section {
+    padding-bottom: 80px;
+  }
+  
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+  
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .section {
+      padding-bottom: 100px;
+    }
+  }
+  
+  @media screen and (min-width: 1280px) {
+    .section {
+      padding-bottom: 150px;
+    }
+  }
+  
+  .container {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  
+  @media (min-width: 375px) {
+    .container {
+      max-width: 335px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      max-width: 704px;
+    }
+  }
+  
+  @media (min-width: 1280px) {
+    .container {
+      max-width: 1024px;
+    }
+  }
+  
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  
+
+  
+  @media screen and (min-width: 768px) {
+    .text__element::after {
+      height: 20px;
+    }
+  }
+
+  .backdrop {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(17, 21, 24, 0.3);
+    transition:
+      opacity var(--transition-dur-and-func),
+      visibility var(--transition-dur-and-func);
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+  }
+  
+  .backdrop-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    transition: all var(--transition-dur-and-func);
+  }

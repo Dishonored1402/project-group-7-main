@@ -1,0 +1,124 @@
+body {
+  font-family: 'Manrope', sans-serif;
+  margin: 0;
+  color: #121417;
+  background-color: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* Section title */
+.section-title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 8px;
+  transform: translateX(-50%);
+  width: 140px;
+  height: 12px;
+  background: rgba(74, 222, 128, 0.4); /* світло-зелена підкреслююча смуга */
+  z-index: -1;
+  border-radius: 6px;
+}
+
+.section-description {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: #12141780;
+  max-width: 709px;
+  height: 60px;
+  opacity: 1;
+  margin: 0 auto 64px; 
+}
+
+/* Card list layout */
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: calc((100% - (23.5% * 4)) / 3);
+}
+
+/* Card item */
+.card-item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 40px;
+  flex: 1 1 calc(20% - 64px);
+  width: 23.5%;
+}
+
+/* Images as circles */
+.card-item img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+/* Name */
+.card-title {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+/* Description */
+.card-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: rgba(18, 20, 23, 0.5);
+  max-width: 260px;
+  margin: 0 auto;
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .card-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .card-item {
+    flex: 1 1 calc(50% - 40px); /* 2 in a row on tablet */
+  }
+}
+
+/* Desktop */
+@media (min-width: 1200px) {
+  .card-list {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .card-item {
+    flex: 1 1 100%; /* 1 in a row on mobile */
+  }
+}
+
